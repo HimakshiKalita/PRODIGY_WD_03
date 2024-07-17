@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    font-family: 'Roboto',serif;
+    align-items: center;
+    text-align: center;
+}
+
+.header-text{
+    color: azure;
+    font-size: 3.5rem;
+    padding-top: 45px;
+}
+
+.header-text #span1{
+    color: #49fafd;
+}
+
+.header-text #span2{
+    color: #ff19b3;
+}
+
+#header-text2{
+    color: #468189;
+    font-size: 23px;
+    padding-top: 55px;
+    padding-bottom: 25px;
+}
+
+.main{
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background: darkgrey;
+    padding: 1px;
+    
+}
+
+.box{
+    background-color: azure;
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgb(105, 105, 105);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    font-size: 85px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.box:hover{
+    background-color: #a5a1a8;
+}
+
+.resetbtn{
+    background: #2b9720;
+    color: black;
+    padding: 8px 8px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+#win-gif{
+    margin-top: 20px;
+    width:20vw;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .header-text {
+        font-size: 2.5rem;
+    }
+    .container {
+        gap: 0.2px;
+        padding: 0.5px;
+    }
+    .box {
+        height: 80px;
+        width: 80px;
+        font-size: 65px;
+    }
+    .resetbtn {
+        font-size: 13px;
+    }
+    #win-gif{
+        width: 30vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-text {
+        font-size: 2rem;
+    }
+    #header-text2 {
+        font-size: 18px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .container {
+        gap: 0.2px;
+        padding: 0.5px;
+    }
+    .box {
+        height: 60px;
+        width: 60px;
+        font-size: 45px;
+    }
+    .resetbtn {
+        font-size: 15px;
+        padding: 6px 12px;
+    }
+    #win-gif{
+        width: 40vw;
+    }
+}
